@@ -3,9 +3,9 @@ using BenchmarkDotNet.Running;
 
 namespace JsonSerializerBanchmark
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             BenchmarkRunner.Run<SerializationBenchmark>();
             Console.ReadLine();
